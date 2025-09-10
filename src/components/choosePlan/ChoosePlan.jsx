@@ -190,20 +190,20 @@ export default function PricingSection() {
       </div>
 
       {/* Pricing Navigation + Cards */}
-      <div data-aos="fade-up" data-aos-delay="300" className="flex items-center justify-center gap-8 max-w-7xl mx-auto">
+      <div data-aos="fade-up" data-aos-delay="300" className="md:flex items-center justify-center gap-8 max-w-7xl mx-auto">
         {/* Left Arrow */}
         <button
           onClick={handlePrev}
-          className="flex-shrink-0 bg-white hover:bg-green-50 text-[#34553A] w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group border border-[#34553A] mt-[120px]"
+          className="md:flex-shrink-0 bg-white hidden md:block hover:bg-green-50 text-[#34553A] w-16 h-16 rounded-full md:flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group border border-[#34553A] mt-[120px]"
         >
-          <ChevronLeft className="w-8 h-8 group-hover:scale-110 transition-transform" />
+          <ChevronLeft className="w-8 h-8 hidden md:block group-hover:scale-110 transition-transform" />
         </button>
 
         {/* Pricing Plans */}
-        <div className="flex-1 overflow-hidden pb-4 px-4">
+        <div className="md:flex-1 md:overflow-hidden md:pb-4 md:px-4">
           <div className="transition-all duration-500 ease-in-out">
             {/* Tabs */}
-            <div className="flex justify-center mt-6 gap-3 mb-16">
+            <div className="flex justify-center flex-wrap mt-6 gap-10 mb-16">
               {tabs.map((tab, idx) => (
                 <button
                   key={idx}
@@ -307,9 +307,9 @@ export default function PricingSection() {
         {/* Right Arrow */}
         <button
           onClick={handleNext}
-          className="flex-shrink-0 bg-white hover:bg-green-50 text-[#34553A] w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group border border-[#34553A] mt-[120px]"
+          className="md:flex-shrink-0 hidden md:block bg-white hover:bg-green-50 text-[#34553A] w-16 h-16 rounded-full md:flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group border border-[#34553A] mt-[120px]"
         >
-          <ChevronRight className="w-8 h-8 group-hover:scale-110 transition-transform" />
+          <ChevronRight className="w-8 h-8 hidden md:block group-hover:scale-110 transition-transform" />
         </button>
       </div>
     </div>
